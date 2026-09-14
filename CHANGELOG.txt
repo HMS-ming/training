@@ -83,6 +83,15 @@
   回退：把 backup_20260914_194733\ 下对应文件复制回正式位置即可。
 
 --------------------------------------------------------------------
+【2026-09-14 20:13 发布：整理版已推送到 GitHub 个人仓库 HMS-ming/training】
+  动作：git init(main) + 本地占位作者(NewComer <newcomer@users.noreply.github.com>)
+       + .gitignore(排除 backup_*/ 与 .workbuddy/) + 首次提交 f058efc
+       + push 到 https://github.com/HMS-ming/training.git (公开仓库, origin/main)。
+  推送内容：README.md、CHANGELOG.txt、第一期/（第一期.md、第一期教程.md、
+       教程/01~09、learningMd/）。不含 backup_* 与 .workbuddy。
+  回退：本地内容均可从各 backup_* 目录还原；如远程要撤销可 reset 后重推。
+
+--------------------------------------------------------------------
 【2026-09-14 20:08 全面检查：修复 2 处内部链接断链（上传前检查发现）】
   检查方法：脚本扫描全部 17 个 .md 文件，校验每个内部相对链接指向的文件是否存在。
   发现并修复（2 处，均为多余的上一级 ".."）：
