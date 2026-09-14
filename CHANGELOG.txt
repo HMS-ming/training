@@ -83,6 +83,19 @@
   回退：把 backup_20260914_194733\ 下对应文件复制回正式位置即可。
 
 --------------------------------------------------------------------
+【2026-09-14 20:15 署名修订：历史提交作者改为 HMS-ming（用户要求，origin 已 force 重推）】
+  用户提供：姓名 HMS-ming，邮箱 3616136252@qq.com。
+  操作：
+     - 建立备份分支 backup-newcomer，保存原 NewComer 历史（f058efc）
+       作为反悔点
+     - 用 git filter-branch 把 main 两条提交的 作者/提交者 统改为
+       HMS-ming <3616136252@qq.com>
+       （新哈希：f058efc→4ec266f、655a6ec→46a22d1）
+     - 本地 user.name/user.email 同步为 HMS-ming / 3616136252@qq.com
+     - 更新本文档后 force push 覆盖远程 origin/main
+  反悔：`git checkout backup-newcomer` 即可回到原 NewComer 历史。
+
+--------------------------------------------------------------------
 【2026-09-14 20:13 发布：整理版已推送到 GitHub 个人仓库 HMS-ming/training】
   动作：git init(main) + 本地占位作者(NewComer <newcomer@users.noreply.github.com>)
        + .gitignore(排除 backup_*/ 与 .workbuddy/) + 首次提交 f058efc
