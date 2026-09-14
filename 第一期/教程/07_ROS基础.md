@@ -77,18 +77,59 @@ rclpy.spin(node)
 ```
 运行两个终端各跑一个节点，你会看到数据从发射端→话题→接收端。这就是 ROS 通信的最小单元，理解它，机器人各个模块怎么协作就懂了。
 
-## 7.5 动手练习清单
+## 7.5 用命令"看见"节点之间在传什么
+
+前面小乌龟能跑，但你可能没"看见"机制。用这几个命令把黑盒子打开看：
+
+```bash
+# ROS2 版本：
+ros2 node list          # 现在有哪些节点
+ros2 topic list         # 有哪些话题
+ros2 topic echo /turtle1/cmd_vel   # 实时看某个话题里的数据
+ros2 topic info /turtle1/cmd_vel   # 谁在发、谁在听
+rqt_graph               # 画一张"节点-话题"关系图（超直观）
+```
+
+> `rqt_graph` 弹出来的那张图就是我反复说的"微信群图"：方框是节点，连线是话题。**看懂这张图 = 看懂 ROS 通信**。看不到就多开几个节点再看。
+
+## 7.6 工作空间与你的第一个包
+
+真正写项目时，代码放在叫"工作空间"的地方，一个功能一个"包"（package）：
+
+```bash
+# 创建目录结构（ROS2 用 colcon 构建）
+mkdir -p ros2_ws/src
+cd ros2_ws/src
+ros2 pkg create my_first_pkg --build-type ament_python   # 建一个 Python 包
+cd ~/ros2_ws && colcon build                              # 编译
+source install/setup.bash                                 # 每个新终端都要 source 一下
+```
+
+- 把 7.4 的 talker/listener 放进 `my_first_pkg`，就能用 `ros2 run my_first_pkg talker` 启动了。
+- ⚠️ **"找不到包 / 找不到命令"的 90% 原因**：忘了 `source install/setup.bash`。把它写进一次，或建好工作空间后就 `source ~/ros2_ws/install/setup.bash`。
+
+## 7.7 常见报错与排错（先把坑说在前面）
+
+- **`source` 没生效 / 找不到 package**：重新 `source install/setup.bash`；确认你在正确的工作空间目录。
+- **端口被占用（ROS1）**：`killall roscore` 或重启 `roscore`。
+- **两个终端都要 source**：ROS 的每个终端都要 source 同一份环境。
+- **版本不对**：ROS1 的命令是 `rostopic`，ROS2 是 `ros2 topic ...`，别混用。
+- 老规矩：把报错整段贴给 DeepSeek / 搜一下，基本都能解决。
+
+## 7.8 动手练习清单
 
 - [ ] 跑通小乌龟例子（键盘控制乌龟移动）
 - [ ] 自己各写一个 talker / listener，能互发消息
 - [ ] 改一版：把消息从数字改成字符串（比如发一句"Hello LightChaser"）
-- [ ] 用 `rostopic` / `rqt_graph` 看看节点和话题的关系图
-- [ ] 记录环境安装踩过的坑到你的 `debug 笔记`
+- [ ] 用 `rqt_graph`/`rostopic` 看看节点和话题的关系图
+- [ ] 建一个自己的工作空间和 `my_first_pkg` 包，把脚本放进去用 `ros2 run` 启动
+- [ ] 记录环境安装 + 排错踩过的坑到你的 `debug 笔记`
 
-## 7.6 本章验收（交付）
+## 7.9 本章验收（交付）
 
 - 小乌龟例子跑通
-- talker/listener 程序运行成功，把运行截图 + 代码提交到你的 Git 仓库
+- talker/listener 程序运行成功 + `rqt_graph` 关系图截图
+- 把代码 + 运行截图提交到你的 Git 仓库
 
 ---
 
