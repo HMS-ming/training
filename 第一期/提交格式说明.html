@@ -1,0 +1,325 @@
+<div style="max-width:860px;margin:0 auto;padding:8px 4px;font-family:微软雅黑,Microsoft YaHei,PingFang SC,sans-serif;color:#333333;-webkit-font-smoothing:antialiased;">
+<h1 style="font-size:22px;color:#E64A19;margin:0 0 12px 0;font-weight:bold;line-height:1.4;">📦 第一期核心成果 · GitHub 提交格式说明</h1>
+<blockquote style="margin:10px 0;padding:8px 12px;background:#FDF1EC;border-left:4px solid #E64A19;color:#5A4038;font-size:13px;line-height:1.8;">
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">面向第 1~3 章（C/C++、大模型、Git）。<strong style="color:#1A1A1A;font-weight:bold;">照这份说明摆文件、写提交信息</strong>，学长验收会快很多，你的成果也不会被漏看。
+✨ 对应教程：<a href="教程/01_C语言基础.md">第 1 章 C/C++</a> · <a href="教程/02_大模型基础.md">第 2 章 大模型</a> · <a href="教程/03_Git基础.md">第 3 章 Git</a></p>
+</blockquote>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">0. 一句话总览</h2>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">一个仓库，交三样东西：</strong></p>
+<table style="border-collapse:collapse;width:100%;margin:0 0 12px 0;">
+<thead>
+<tr>
+<th style="background:#E64A19;color:#FFFFFF;font-weight:bold;text-align:left;padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;">章节</th>
+<th style="background:#E64A19;color:#FFFFFF;font-weight:bold;text-align:left;padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;">交什么</th>
+<th style="background:#E64A19;color:#FFFFFF;font-weight:bold;text-align:left;padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;">怎么交</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">第 1 章 C/C++</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><strong style="color:#1A1A1A;font-weight:bold;">C 源码文件</strong>（5 个必做，+1 选做）</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">放进仓库 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">01_C语言基础/</code></td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">第 2 章 大模型</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><strong style="color:#1A1A1A;font-weight:bold;">截图</strong>（3 张）</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">放进仓库 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">02_大模型基础/</code></td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">第 3 章 Git</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><strong style="color:#1A1A1A;font-weight:bold;">仓库链接本身</strong></td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">不用额外写说明，把链接交上来即可</td>
+</tr>
+</tbody>
+</table>
+<pre style="background:#F7F7F7;border:1px solid #E2E2E2;border-radius:4px;padding:10px 12px;margin:0 0 12px 0;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:12.5px;line-height:1.7;color:#24292E;white-space:pre;"><code style="font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#24292E;background:none;padding:0;">你的 GitHub 仓库
+├── .gitignore            挡住 API Key（放了第 2 章代码就必须有）
+├── 01_C语言基础/          第 1 章：5 个 C 文件
+└── 02_大模型基础/         第 2 章：3 张截图
+</code></pre>
+<blockquote style="margin:10px 0;padding:8px 12px;background:#FDF1EC;border-left:4px solid #E64A19;color:#5A4038;font-size:13px;line-height:1.8;">
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">💡 第 3 章"交什么"就是<strong style="color:#1A1A1A;font-weight:bold;">这个仓库</strong>：仓库里有多条提交记录，能看出你走通了 clone → 改 → push，就算完成。不需要再写说明文档。</p>
+</blockquote>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">1. 仓库怎么建（命名规范）</h2>
+<table style="border-collapse:collapse;width:100%;margin:0 0 12px 0;">
+<thead>
+<tr>
+<th style="background:#E64A19;color:#FFFFFF;font-weight:bold;text-align:left;padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;">项目</th>
+<th style="background:#E64A19;color:#FFFFFF;font-weight:bold;text-align:left;padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;">要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">仓库名</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">LightChaser-Training-编号</code></td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">示例</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">LightChaser-Training-01</code></td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">编号怎么找</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">《2026追光培训进度登记表》里<strong style="color:#1A1A1A;font-weight:bold;">你名字前面的「序号」</strong>（1~72）</td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">编号格式</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">两位数，不足两位前面补 0（写 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">01</code>，不要写 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">1</code>）</td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">可见性</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><strong style="color:#1A1A1A;font-weight:bold;">Public（公开）</strong>——私有仓库学长打不开，等于没交</td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">初始化</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">创建时勾选 <strong style="color:#1A1A1A;font-weight:bold;">Add a README file</strong></td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">数量</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">前三章<strong style="color:#1A1A1A;font-weight:bold;">只用这一个仓库</strong>，不要每章建一个</td>
+</tr>
+</tbody>
+</table>
+<blockquote style="margin:10px 0;padding:8px 12px;background:#FDF1EC;border-left:4px solid #E64A19;color:#5A4038;font-size:13px;line-height:1.8;">
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">⚠️ 如果你按<strong style="color:#1A1A1A;font-weight:bold;">旧版教程</strong>建了 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">my-c-practice</code>（或用了自己的名字、姓名拼音）：进仓库 <strong style="color:#1A1A1A;font-weight:bold;">Settings → Repository name</strong> 改名成 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">LightChaser-Training-你的编号</code> 即可。GitHub 会自动把旧链接跳转到新地址，之前的提交记录一条都不会丢。</p>
+</blockquote>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">为什么用编号，不用姓名拼音</strong>：本期 72 位同学同时交作业，编号和在线登记表<strong style="color:#1A1A1A;font-weight:bold;">一一对应</strong>，学长拿登记表一对就知道是谁的仓库——不用猜拼音怎么写，也不会因为重名或拼写不一致而认错人。</p>
+<blockquote style="margin:10px 0;padding:8px 12px;background:#FDF1EC;border-left:4px solid #E64A19;color:#5A4038;font-size:13px;line-height:1.8;">
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">💡 仓库名只有编号、看不出姓名，这是<strong style="color:#1A1A1A;font-weight:bold;">刻意为之</strong>：仓库是公开的，不暴露个人信息。
+学长靠登记表里的编号对应到你，所以你<strong style="color:#1A1A1A;font-weight:bold;">不需要</strong>在 README、代码或截图里写姓名、班级、学号。</p>
+</blockquote>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">2. 目录结构（照着摆就行）</h2>
+<pre style="background:#F7F7F7;border:1px solid #E2E2E2;border-radius:4px;padding:10px 12px;margin:0 0 12px 0;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:12.5px;line-height:1.7;color:#24292E;white-space:pre;"><code style="font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#24292E;background:none;padding:0;">LightChaser-Training-01/           ← 仓库根目录（01 = 你在登记表里的序号）
+│
+├── .gitignore                     ← 放了第 2 章代码才需要，模板见第 6 节
+│
+├── 01_C语言基础/                   ← 第 1 章：5 个必做 C 文件（+1 选做）
+│   ├── hello.c
+│   ├── calculator.c
+│   ├── odd_sum.c
+│   ├── swap_pointer.c
+│   ├── average_malloc.c
+│   └── score_struct.c             （选做进阶）
+│
+└── 02_大模型基础/                  ← 第 2 章：3 张截图
+    ├── 2-1_网页版AI解释指针.png
+    ├── 2-2_编辑器里用AI.png
+    ├── 2-3_API跑通.png
+    └── llm_test.py               （可选，放进来更好）
+</code></pre>
+<blockquote style="margin:10px 0;padding:8px 12px;background:#FDF1EC;border-left:4px solid #E64A19;color:#5A4038;font-size:13px;line-height:1.8;">
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">💡 教程第 1 章里建的就是这个 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">01_C语言基础</code> 文件夹，照教程做即可。
+带章节号前缀的好处是一目了然，后面第 2 章的文件夹放进来也不会乱。
+第 3 章不需要单独建文件夹。</p>
+</blockquote>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">3. 第 1 章：交 C 源码文件</h2>
+<table style="border-collapse:collapse;width:100%;margin:0 0 12px 0;">
+<thead>
+<tr>
+<th style="background:#E64A19;color:#FFFFFF;font-weight:bold;text-align:left;padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;">练习</th>
+<th style="background:#E64A19;color:#FFFFFF;font-weight:bold;text-align:left;padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;">必须的文件名</th>
+<th style="background:#E64A19;color:#FFFFFF;font-weight:bold;text-align:left;padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;">要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">Hello World</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">hello.c</code></td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">编译运行成功，输出 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">Hello, LightChaser!</code></td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">简易计算器</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">calculator.c</code></td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">支持 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">+ - * /</code>，<strong style="color:#1A1A1A;font-weight:bold;">除数为 0 要提示</strong></td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">1~100 奇数和</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">odd_sum.c</code></td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">打印 1~100 的奇数和</td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">指针交换</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">swap_pointer.c</code></td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><strong style="color:#1A1A1A;font-weight:bold;">必须自己写</strong>，用指针交换两个变量的值</td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">malloc 求平均</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">average_malloc.c</code></td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">动态申请数组求平均值，<strong style="color:#1A1A1A;font-weight:bold;">记得 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">free</code></strong></td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">成绩单（选做）</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">score_struct.c</code></td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">结构体存姓名 + 分数</td>
+</tr>
+</tbody>
+</table>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">通用要求</strong></p>
+<ul style="margin:0 0 10px 0;padding-left:22px;">
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">一个练习一个文件，<strong style="color:#1A1A1A;font-weight:bold;">文件名用小写 + 下划线</strong>（<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">swap_pointer.c</code>，不要 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">Swap Pointer.c</code>）。</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">每个 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.c</code> 文件<strong style="color:#1A1A1A;font-weight:bold;">必须能独立编译运行</strong>，提交前自己先 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">gcc</code> 跑一遍。</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">源码里写点注释，说明这段在干什么——学长看的是你有没有真的懂。</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">用 C++ 也可以，但文件后缀要和内容一致（用 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.cpp</code> 就写 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.cpp</code>）。</li>
+</ul>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">4. 第 2 章：交截图</h2>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">第 2 章交<strong style="color:#1A1A1A;font-weight:bold;">截图</strong>，不用交代码。对应教程本章的三条验收，截这三张：</p>
+<table style="border-collapse:collapse;width:100%;margin:0 0 12px 0;">
+<thead>
+<tr>
+<th style="background:#E64A19;color:#FFFFFF;font-weight:bold;text-align:left;padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;">截图</th>
+<th style="background:#E64A19;color:#FFFFFF;font-weight:bold;text-align:left;padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;">截什么</th>
+<th style="background:#E64A19;color:#FFFFFF;font-weight:bold;text-align:left;padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;">建议文件名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">① 网页版 AI</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">在网页版 DeepSeek 里，把第 1 章的指针代码贴进去、AI 给出解释的界面</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">2-1_网页版AI解释指针.png</code></td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">② 编辑器里用 AI</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">在 Trae / VS Code 里选中一段代码，AI 面板给出解释或找出 bug 的界面</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">2-2_编辑器里用AI.png</code></td>
+</tr>
+<tr>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">③ API 跑通</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;">终端里运行 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">python llm_test.py</code>，成功打印出模型回答的界面</td>
+<td style="padding:6px 9px;border:1px solid #D0D0D0;font-size:13px;color:#333333;vertical-align:top;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">2-3_API跑通.png</code></td>
+</tr>
+</tbody>
+</table>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">截图要求</strong></p>
+<ul style="margin:0 0 10px 0;padding-left:22px;">
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">要能看出是你自己的操作</strong>：画面里最好带上你的代码内容、文件名或终端命令，别只截一句"成功了"。</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">⚠️ <strong style="color:#1A1A1A;font-weight:bold;">只截必要区域，别把无关窗口截进去</strong>：截图前先关掉微信 / QQ、邮箱、其他浏览器标签和文件管理器——桌面文件名、聊天内容、通知弹窗都会跟着一起进公开仓库。用 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">Win + Shift + S</code> 框选需要的部分，<strong style="color:#1A1A1A;font-weight:bold;">不要整屏截</strong>。</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">格式用 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.png</code> / <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.jpg</code>，单张<strong style="color:#1A1A1A;font-weight:bold;">别超过 2 MB</strong>（仓库不是图床，塞大图会让仓库很臃肿）。</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">⚠️ <strong style="color:#1A1A1A;font-weight:bold;">截图前检查画面里有没有 API Key</strong>（<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.env</code>、代码、终端回显里都可能露出来）。有就<strong style="color:#1A1A1A;font-weight:bold;">打码或换成占位符</strong>，别为了交作业把 Key 送出去。</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">如果 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">llm_test.py</code> 你也写了，顺手放进 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">02_大模型基础/</code> 更好，但不放也算完成——截图能证明跑通就行。</li>
+</ul>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">5. 第 3 章：交仓库链接，不用额外写说明</h2>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">第 3 章不要求写任何说明文档，<strong style="color:#1A1A1A;font-weight:bold;">仓库本身就是交付物</strong>。只要满足：</p>
+<ul style="margin:0 0 10px 0;padding-left:22px;">
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ 仓库存在，且是 <strong style="color:#1A1A1A;font-weight:bold;">Public</strong></li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ 仓库里有<strong style="color:#1A1A1A;font-weight:bold;">多条提交记录</strong>（教程要求至少 2 条），能看出你走通了 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">clone → 改 → push</code></li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ 把仓库链接填进《2026追光培训进度登记表》的「GitHub 链接」列</li>
+</ul>
+<blockquote style="margin:10px 0;padding:8px 12px;background:#FDF1EC;border-left:4px solid #E64A19;color:#5A4038;font-size:13px;line-height:1.8;">
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">想更稳妥的话，可以随便改一行代码再提交一次，<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">git log --oneline</code> 里能看到至少 2 条，就稳了。</p>
+</blockquote>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">提交信息写清楚做了什么</strong>：每完成一个练习就提交一次，信息用「做了什么」直说，比如 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">完成 Hello World</code>、<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">修正计算器除零判断</code>；别写 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">111</code>、<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">asdfgh</code>、<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">update</code> 这种。<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">git log --oneline</code> 一眼能看懂，学长验收快，你的提交历史本身也是成长记录。</p>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">6. .gitignore 模板（放了第 2 章代码才需要）</h2>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">只交截图、没往仓库里放代码的话，这一节可以跳过。</strong>
+但只要你把 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">llm_test.py</code>（或任何带 Key 的代码）放进了仓库，就<strong style="color:#1A1A1A;font-weight:bold;">必须</strong>建 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.gitignore</code> 并写入 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.env</code>——这是唯一挡住 Key 泄露的东西。</p>
+<pre style="background:#F7F7F7;border:1px solid #E2E2E2;border-radius:4px;padding:10px 12px;margin:0 0 12px 0;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:12.5px;line-height:1.7;color:#24292E;white-space:pre;"><code class="language-gitignore" style="font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#24292E;background:none;padding:0;"># ── 密钥：最重要的一行，删了 Key 就会泄露 ──
+.env
+
+# ── C / C++ 编译产物（gcc 生成的，不用交）──
+*.exe
+*.o
+*.out
+a.out
+
+# ── Python ──
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ── 编辑器 / 系统 ──
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+</code></pre>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.env.example</code> 模板</strong>（可以提交，里面只有变量名，没有真实 Key）：</p>
+<pre style="background:#F7F7F7;border:1px solid #E2E2E2;border-radius:4px;padding:10px 12px;margin:0 0 12px 0;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:12.5px;line-height:1.7;color:#24292E;white-space:pre;"><code style="font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#24292E;background:none;padding:0;">DEEPSEEK_API_KEY=在这里填你自己的Key
+</code></pre>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">7. 🚨 三条红线（违反要重做）</h2>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">① 绝不提交 API Key / <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.env</code> 文件</strong></p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.env</code> 里是你的 DeepSeek Key。一旦推上 GitHub，几秒内就会被爬虫扫走盗刷。
+只要仓库里放了第 2 章的代码，就必须建 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.gitignore</code> 并写入 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.env</code>（模板见第 6 节）。
+另外<strong style="color:#1A1A1A;font-weight:bold;">截图时也别把 Key 截进去</strong>（见第 4 节）。</p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">② 不提交编译产物</strong></p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.exe</code>、<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.o</code>、<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.out</code> 是 gcc 生成的，不是你的源码，别人也用不上，写进 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.gitignore</code>。</p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">③ 不提交别人的代码和无关大文件</strong></p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">抄来的代码要注明来源；视频、安装包、几百 MB 的数据集不要往仓库里塞。</p>
+<blockquote style="margin:10px 0;padding:8px 12px;background:#FDF1EC;border-left:4px solid #E64A19;color:#5A4038;font-size:13px;line-height:1.8;">
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">⚠️ <strong style="color:#1A1A1A;font-weight:bold;">万一 Key 不小心提交上去了</strong>：立刻去 <a href="https://platform.deepseek.com/">platform.deepseek.com</a> <strong style="color:#1A1A1A;font-weight:bold;">删掉那个 Key 并新建一个</strong>（删掉是唯一有效的止损），再把代码里的 Key 换成新的。
+顺序不能反——旧 Key 已经泄露，只改代码救不回来。</p>
+</blockquote>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">8. ✅ 提交前自检（逐条打勾）</h2>
+<ul style="margin:0 0 10px 0;padding-left:22px;">
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ 仓库名是 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">LightChaser-Training-编号</code>（两位数，如 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">01</code>），且是 <strong style="color:#1A1A1A;font-weight:bold;">Public</strong></li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">01_C语言基础/</code> 里 5 个必做文件都在（hello / calculator / odd_sum / swap_pointer / average_malloc）</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ 每个 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.c</code> 文件我都亲手 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">gcc</code> 编译并运行过，没有报错</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">02_大模型基础/</code> 里 3 张截图都在，能看清是我自己的操作</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ 截图里<strong style="color:#1A1A1A;font-weight:bold;">没有露出 API Key</strong></li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ 截图里没有微信 / QQ 聊天、邮箱、无关文件名等私人内容</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ README、代码注释里没有姓名、班级、学号、手机号等个人信息</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ 在仓库搜索框搜 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">sk-</code>，<strong style="color:#1A1A1A;font-weight:bold;">搜不到我的 Key</strong></li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ 放了代码的话，<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.gitignore</code> 里有 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.env</code>，且 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.env</code> 本身没有被提交</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">git log --oneline</code> 至少有 2 条提交记录，信息看得懂</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">☐ 仓库链接已填进《2026追光培训进度登记表》的「GitHub 链接」列</li>
+</ul>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">9. 📮 怎么算"交了"（交付流程）</h2>
+<ol style="margin:0 0 10px 0;padding-left:22px;">
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">打开你的仓库，复制地址栏链接：
+   <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">https://github.com/你的用户名/LightChaser-Training-01</code></li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">打开《2026追光培训进度登记表》，找到自己那一行，把链接填进 <strong style="color:#1A1A1A;font-weight:bold;">「GitHub 链接」</strong> 列</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">你已完成的章节，在该章单元格下拉选 <strong style="color:#1A1A1A;font-weight:bold;">√</strong>（未完成留空）</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">把链接发到培训群，或直接发给对接的学长</li>
+<li style="font-size:14px;line-height:1.85;margin:0 0 4px 0;color:#333333;">学长按这份格式逐项核对；格式不对会被打回补交，<strong style="color:#1A1A1A;font-weight:bold;">早交早改</strong></li>
+</ol>
+<blockquote style="margin:10px 0;padding:8px 12px;background:#FDF1EC;border-left:4px solid #E64A19;color:#5A4038;font-size:13px;line-height:1.8;">
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">🕐 第 1~3 章需在 <strong style="color:#1A1A1A;font-weight:bold;">10.26 前</strong>完成并交付，作为最终面试的验收依据。</p>
+</blockquote>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">10. ❓ 常见问题</h2>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">Q1：我用的 C++ 行不行？</strong>
+行。第 1 章重点是语法和指针，C 或 C++ 都可以，但文件后缀要和内容一致（用 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.cpp</code> 就写 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.cpp</code>）。</p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">Q2：练习没全做完能先交吗？</strong>
+可以，但没做完的章节<strong style="color:#1A1A1A;font-weight:bold;">别打 √</strong>。学长看的是你实际做到哪一步，诚实填写不影响评价，虚报才会扣分。</p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">Q3：push 时让我输密码，输了不对？</strong>
+GitHub 现在不认账号密码。要么用 <strong style="color:#1A1A1A;font-weight:bold;">Personal Access Token</strong> 当密码，要么配 <strong style="color:#1A1A1A;font-weight:bold;">SSH</strong>。见 <a href="learningMd/Git.md">Git 入门</a>。</p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">Q4：我按旧版教程建了 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">my-c-practice</code>（或用了自己的名字），一定要改名吗？</strong>
+建议改，一分钟的事（Settings → Repository name），改成 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">LightChaser-Training-你的编号</code>。不改的话，请在登记表「备注」里写明你实际的仓库名，否则学长可能找不到。</p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">Q5：仓库一定要 Public 吗？</strong>
+是。私有仓库学长打不开，无法验收。确实不想公开，可以在 <strong style="color:#1A1A1A;font-weight:bold;">Settings → Collaborators</strong> 里把学长加为协作者，并在备注里说明。</p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">Q6：第 2 章的截图可以用手机拍屏幕吗？</strong>
+可以，但要能看清内容。推荐用电脑截图工具（Windows：<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">Win + Shift + S</code>）。</p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">Q7：<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">.env</code> 被我提交了怎么办？</strong>
+见第 7 节红线①：<strong style="color:#1A1A1A;font-weight:bold;">先去 DeepSeek 后台删掉那个 Key</strong>，再改代码。顺序不能反。</p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">Q8：我可以多建几个仓库吗？</strong>
+前三章成果请<strong style="color:#1A1A1A;font-weight:bold;">集中在一个仓库</strong>里，方便验收。之后的进阶章节可以另建仓库，也可以继续放进同一个仓库的不同文件夹。</p>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><strong style="color:#1A1A1A;font-weight:bold;">Q9：我不知道自己的编号是多少？</strong>
+打开《2026追光培训进度登记表》，找到自己那一行，<strong style="color:#1A1A1A;font-weight:bold;">最左边「序号」列就是你的编号</strong>（1~72），写成两位数（<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">01</code>、<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">07</code>、<code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">72</code>）。</p>
+<hr />
+<h2 style="font-size:18px;color:#E64A19;margin:26px 0 10px 0;font-weight:bold;border-bottom:1px solid #F0D0C4;padding-bottom:5px;line-height:1.4;">附：README.md 模板（可选，不写也算完成）</h2>
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">第 3 章不要求写说明，<strong style="color:#1A1A1A;font-weight:bold;">不写 README 也算完成</strong>。想写就抄下面这段——<strong style="color:#1A1A1A;font-weight:bold;">只写编号，不写姓名班级</strong>：</p>
+<pre style="background:#F7F7F7;border:1px solid #E2E2E2;border-radius:4px;padding:10px 12px;margin:0 0 12px 0;overflow-x:auto;font-family:Consolas,Monaco,monospace;font-size:12.5px;line-height:1.7;color:#24292E;white-space:pre;"><code class="language-markdown" style="font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#24292E;background:none;padding:0;"># LightChaser 培训成果（编号 01）
+
+- **编号**：01 —— 对应《2026追光培训进度登记表》里的序号
+- **仓库用途**：追光社团第一期培训（第 1~3 章）成果提交
+
+## 目录说明
+
+- `01_C语言基础/` —— 第 1 章 5 个练习的 C 源码
+- `02_大模型基础/` —— 第 2 章的操作截图
+</code></pre>
+<blockquote style="margin:10px 0;padding:8px 12px;background:#FDF1EC;border-left:4px solid #E64A19;color:#5A4038;font-size:13px;line-height:1.8;">
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;">⚠️ <strong style="color:#1A1A1A;font-weight:bold;">仓库是公开的，别放个人信息</strong>。README、代码注释、文件名里都不要出现<strong style="color:#1A1A1A;font-weight:bold;">姓名、班级、学号、手机号、邮箱、宿舍、身份证</strong>这类内容——公开仓库任何人（包括搜索引擎）都能看到。
+用编号就够了：编号和姓名的对应关系只存在社团内部的《登记表》里，外人看到一个 <code style="background:#F2F2F2;padding:1px 5px;border-radius:3px;font-family:Consolas,Monaco,monospace;font-size:12.5px;color:#C43E12;">01</code> 认不出是谁。</p>
+</blockquote>
+<hr />
+<p style="font-size:14px;line-height:1.85;margin:0 0 10px 0;color:#333333;"><em>← <a href="第一期.md">回到第一期总纲</a> · <a href="第一期教程.md">教程索引</a></em></p>
+</div>

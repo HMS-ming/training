@@ -39,14 +39,18 @@ git config --global user.email "你的邮箱@example.com"
 
 ## 3.3 第一个仓库：把第 1 章代码提交并推送
 
-1. 在 GitHub 右上角 **+ → New repository**，命名 `my-c-practice`，勾选 **Add a README file**，创建。
-2. 把仓库 **Clone** 到本地（记住那串 `https://github.com/你的用户名/my-c-practice.git`）：
+1. 在 GitHub 右上角 **+ → New repository**，命名 `LightChaser-Training-编号`，勾选 **Add a README file**，创建。
+   > **编号是什么**：你在《2026追光培训进度登记表》里名字前面的「序号」，写成两位数（如 `01`、`07`、`72`）。
+   > **别用自己的名字或姓名拼音命名**——几十位同学一起交作业，用编号学长才好对号。完整命名规则见 [提交格式说明](../提交格式说明.md)。
+   > 仓库可见性必须选 **Public（公开）**：私有仓库学长打不开，等于没交。
+2. 把仓库 **Clone** 到本地（记住那串 `https://github.com/你的用户名/LightChaser-Training-编号.git`）：
    ```bash
-   git clone https://github.com/你的用户名/my-c-practice.git
-   cd my-c-practice
+   git clone https://github.com/你的用户名/LightChaser-Training-编号.git
+   cd LightChaser-Training-编号
    ```
-3. 把你在第 1 章写的 `c_practice` 文件夹整个复制进 `my-c-practice/`。
-4. 修改仓库里的 `README.md`，写下你的名字和一句话简介（比如"我正在写一个计算器"）。
+3. 把你在第 1 章写的 `01_C语言基础` 文件夹整个复制进 `LightChaser-Training-编号/`。
+4. 修改仓库里的 `README.md`，写一句话说明这个仓库是干什么的（比如"我正在写一个计算器"）。
+   > ⚠️ **别写姓名、班级、学号**——仓库是公开的，任何人都能看到（连搜索引擎都能搜到）。仓库名里的编号已经足够让学长对上你了。
 5. 提交并推送：
    ```bash
    git add .                     # ① 把所有改动放进"暂存区"
@@ -79,7 +83,7 @@ git pull                # 从 GitHub 拉取最新（多人协作时用）
 
 ## 3.6 常见报错与解决（三大坑）
 
-- **`fatal: not a git repository`（找不到仓库）** → 你不在一个 Git 仓库里。先进到 `my-c-practice` 目录，或先 `git init`。
+- **`fatal: not a git repository`（找不到仓库）** → 你不在一个 Git 仓库里。先进到 `LightChaser-Training-编号` 目录，或先 `git init`。
 - **`Please tell me who you are`（不知道怎么署名）** → 没做 3.2 的身份配置，补上 `user.name` / `user.email` 即可。
 - **`remote: Permission to ... denied`（push 被拒）** → 你 push 到了一个你没权限的仓库。确认是在**自己的仓库**里；如果是别人/团队的仓库，需要管理员给你权限，或用你自己的 fork。
   - 另：用 HTTPS 推送时，GitHub 现在**不认密码**，要用**个人访问令牌（Personal Access Token）**当密码，或用 SSH 方式。
@@ -90,7 +94,7 @@ git pull                # 从 GitHub 拉取最新（多人协作时用）
 
 - [ ] `git --version` 有输出（Git 装好了）
 - [ ] 完成 3.2 身份配置
-- [ ] `my-c-practice` 仓库能看到第 1 章的 C 代码（已 push 到 GitHub）
+- [ ] `LightChaser-Training-编号` 仓库能看到第 1 章的 C 代码（已 push 到 GitHub）
 - [ ] 修改一行代码 → 再 `commit` 一次 → `git log --oneline` 能看到至少 **2 条**提交记录
 - [ ] 换一台设备（或重新 clone）能把这个仓库拉下来（证明真的"存了档"）
 
@@ -101,7 +105,9 @@ git pull                # 从 GitHub 拉取最新（多人协作时用）
 ## ✅ 本章验收（交付物）
 
 - 你的 GitHub 仓库里，有第 1 章练习的代码 + 多次提交记录
-- 能把仓库链接（`https://github.com/你的用户名/my-c-practice`）发给学长 / 放进团队仓库
+- 能把仓库链接（`https://github.com/你的用户名/LightChaser-Training-编号`）发给学长 / 放进团队仓库
+
+> 📦 目录结构、文件命名、提交前自检，统一按 [提交格式说明](../提交格式说明.md) 来。
 
 ---
 
